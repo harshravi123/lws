@@ -4,9 +4,10 @@ import Link from "next/link";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import { defaultSiteContent, type SiteContent } from "@/lib/site-content";
-import Header, { Logo } from "@/components/Header";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import CoursesSection from "@/components/CoursesSection";
+import SiteFooter from "@/components/SiteFooter";
 
 const programs = [
   { title: "NDA Foundation", type: "School aspirants", detail: "Integrated school support with NDA preparation", image: "/images/lws-hero.webp", slug: "nda-foundation" },
@@ -58,7 +59,7 @@ export default function LandingPage({ coursesOnly = false }: { coursesOnly?: boo
           <section className="final-cta" id="contact"><div className="lws-container final-cta-inner"><p className="eyebrow">Your selection journey starts here</p><h2>{content.finalCtaTitle}<br /><em>{content.finalCtaAccent}</em></h2><Link href="/courses" className="button button-red">Explore defence courses <ArrowRight size={17} /></Link></div></section>
         </main>
       </>}
-      <footer className="lws-footer" id="about"><div className="lws-container footer-grid"><div><Logo /><p>Trusted NDA, CDS, AFCAT and SSB coaching for aspirants who want to serve the nation.</p></div><div><span className="footer-label">Defence exams</span><Link href="/courses">NDA Foundation</Link><Link href="/courses">NDA Coaching</Link><Link href="/courses">CDS & AFCAT</Link></div><div><span className="footer-label">Contact LWS</span><a href="mailto:learnwithsumitsir@gmail.com">learnwithsumitsir@gmail.com</a><a href="tel:+918047137368">+91 80 4713 7368</a><span className="footer-location">New Delhi, India</span></div></div><div className="lws-container footer-bottom"><span>© 2026 Learn With Sumit. All rights reserved.</span><span>Privacy · Terms</span></div></footer>
+      <SiteFooter />
     </div>
   );
 }
