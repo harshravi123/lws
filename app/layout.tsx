@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LWS | Learn With Sumit",
   description: "Practical, mentor-led learning for people building what comes next.",
+  icons: {
+    icon: "/images/learn-with-sumit.webp",
+    shortcut: "/images/learn-with-sumit.webp",
+    apple: "/images/learn-with-sumit.webp",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
