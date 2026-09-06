@@ -7,6 +7,7 @@ import { defaultSiteContent, type SiteContent } from "@/lib/site-content";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import CoursesSection from "@/components/CoursesSection";
+import AdvantageSection from "@/components/AdvantageSection";
 import SiteFooter from "@/components/SiteFooter";
 
 const programs = [
@@ -47,6 +48,8 @@ export default function LandingPage({ coursesOnly = false }: { coursesOnly?: boo
           <section className="signal-bar" aria-label="LWS defence preparation promise"><div className="lws-container signal-inner"><span>Concepts</span><i>+</i><span>Practice</span><i>+</i><span>Guidance</span><i>+</i><span>Selection</span><Link href="/about">Why LWS <ArrowRight size={15} /></Link></div></section>
 
           <CoursesSection />
+
+          <AdvantageSection />
 
           <section className="ink-section" id="experience"><div className="lws-container experience-grid"><div className="experience-intro"><p className="eyebrow">The LWS preparation method</p><h2>{content.experienceTitle}<br /><em>{content.experienceAccent}</em></h2><p>{content.experienceBody}</p><Link href="/about" className="button button-light">Our approach <ArrowRight size={17} /></Link></div><div className="method-list"><article><span>01</span><div><h3>Strengthen fundamentals</h3><p>Build command over mathematics, English, reasoning and general knowledge.</p></div></article><article><span>02</span><div><h3>Practise with purpose</h3><p>Regular sectional tests, mock exams and detailed performance analysis.</p></div></article><article><span>03</span><div><h3>Prepare for SSB</h3><p>Develop communication, confidence and officer-like qualities with expert guidance.</p></div></article></div></div></section>
 

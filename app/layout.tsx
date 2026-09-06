@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "LWS | Learn With Sumit",
   description: "Practical, mentor-led learning for people building what comes next.",
   icons: {
-    icon: "/images/learn-with-sumit.webp",
+    icon: [{ url: "/images/learn-with-sumit.webp", type: "image/webp" }],
     shortcut: "/images/learn-with-sumit.webp",
     apple: "/images/learn-with-sumit.webp",
   },
